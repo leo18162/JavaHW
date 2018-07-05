@@ -1,0 +1,14 @@
+package ch4;
+
+public class ch401 {
+
+	public static void main(String[] args) {
+		int a,sum=0;
+		for(int i =1;i<=10;i++) 
+		{
+			 a =(int)(Math.random()*100+1);
+			sum +=a;
+		}
+		System.out.println("總和="+sum+"      平均="+sum/10.0);
+	}
+}
