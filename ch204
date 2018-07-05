@@ -1,0 +1,15 @@
+package ch2;
+
+public class ch204 {
+
+	public static void main(String[] args) {
+		int i ;
+		char[] a = {'0','A','a','張','君','雅'}; 
+		int [] b = new int[6];
+		for (i=0;i<=5;i++)
+		{
+			b[i]=a[i];
+			System.out.print(b[i]+",");
+		}
+	}
+}
