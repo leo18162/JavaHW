@@ -1,0 +1,9 @@
+package ch3;
+
+public class ch306 {
+
+	public static void main(String[] args) {
+		int r = 10;
+		System.out.println("差值"+(r*r-Math.PI*r*r));
+	}
+}
