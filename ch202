@@ -1,0 +1,13 @@
+package ch2;
+
+public class ch202 {
+
+	public static void main(String[] args) {
+		int i;
+		double[] a = new double[5];
+		for (i = 0; i <= 4; i++) {
+			a[i] = Math.random();
+			System.out.println(a[i]);
+		}
+	}
+}
