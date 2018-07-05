@@ -1,0 +1,11 @@
+package ch2;
+
+public class ch201 {
+
+	public static void main(String[] args) {
+		int x=12;
+		int y=6;
+		System.out.println("邊長="+(2*x+2*y));
+		System.out.println("面積="+(x*y));
+	}
+}
