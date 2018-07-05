@@ -1,0 +1,14 @@
+package ch3;
+
+public class ch302 {
+
+	public static void main(String[] args) {
+		
+		
+		int s=256559,m,hr,d;
+		m=s/60;
+		hr=m/60;
+		d=hr/24;
+		System.out.println(s+"秒為    "+d+"天"+hr%24+"小時"+m%60+"分"+s%60+"秒");
+	}
+}
