@@ -1,0 +1,11 @@
+package ch2;
+
+public class ch205 {
+
+	public static void main(String[] args) {
+		int a=120,b=36,c=20;
+		System.out.println("一斤半牛肉"+a*1.5+"元");
+		System.out.println("兩半雞蛋"+b*2+"元");
+		System.out.println("三把半青菜"+c*3+"元");
+	}
+}
