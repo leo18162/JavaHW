@@ -1,0 +1,16 @@
+package ch3;
+import java.util.Scanner;
+
+public class ch303 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		System.out.println("和="+(a+b));
+		System.out.println("差="+(a-b));
+		System.out.println("積="+(a*b));
+		System.out.println("商="+(a/b));
+		System.out.println("餘數="+(a%b));
+	}
+}
