@@ -1,0 +1,46 @@
+package ch5;
+
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+
+public class ch503 {
+
+	public static void main(String[] args) {
+		int yy=2000,mm=01,dd=02;
+		int day=0;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("輸入年,月,日");
+
+			if (scan.hasNextInt())
+			{
+				yy=scan.nextInt();
+			}
+			
+			if (scan.hasNextInt())
+			{
+				mm=scan.nextInt();
+			}
+		
+			if (scan.hasNextInt())	
+			{
+				dd=scan.nextInt();
+			}
+
+
+		
+		int[] m = {0,31,28,31,30,31,30,31,31,30,31,30,31};
+		GregorianCalendar gr = new GregorianCalendar();
+		if( gr.isLeapYear(yy))
+		{
+			m[2]=29;
+		}
+		
+		for(int i =1;i<mm;i++)
+		{
+			day+=m[i];
+		}
+		day+=dd;
+		System.out.println("為第"+day+"天");
+	}
+}
