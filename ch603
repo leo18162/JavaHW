@@ -1,0 +1,20 @@
+package ch6;
+
+import java.util.Arrays;
+
+public class ch603 {
+
+
+	public static void main(String[] args) {
+	ch603 ch = new ch603();
+	int[] test = {55,61,21,84};
+	System.out.println(Arrays.toString(ch.mySort(test)));
+	}
+	
+//----------上面為執行方法的測試-------------
+	public int[] mySort(int[] arrayInt)
+	{
+		Arrays.sort(arrayInt);
+		return arrayInt;
+	}
+}
