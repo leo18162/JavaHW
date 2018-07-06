@@ -1,0 +1,27 @@
+package ch5;
+
+public class ch502 {
+
+	public static void main(String[] args) {
+		int[] a = new int[7];
+		a [0]=0;
+		a[1]=0;
+		int nb, i, j=1;
+
+		for (i = 1; i <= 6; i++) 
+		{
+			nb = (int)(Math.random()*42) + 1;
+			while(j < i) 
+			{
+				if (a[j] == nb) 
+				{
+					nb = (int)(Math.random()*42) + 1;
+					j = 0;
+				}
+				j++;
+			}
+			a[i] = nb;
+			System.out.println(a[i]);
+		}
+	}
+}
