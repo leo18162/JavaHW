@@ -18,6 +18,7 @@ public class ch5041 {
 				case 'o':
 				case 'u':
 					sum++;
+					break;
 				}
 			}
 		}
