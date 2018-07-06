@@ -1,0 +1,19 @@
+package ch6;
+
+public class ch602 {
+
+
+	public static void main(String[] args) {
+	ch602 ch = new ch602();
+	System.out.println(ch.factorial(5));
+	}
+	
+//----------上面為執行方法的測試-------------
+	public long factorial(int n)
+	{
+		int sum=1;
+		for(int i =1;i<=n;i++)
+			sum*=i;
+		return sum ;
+	}
+}
