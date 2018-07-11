@@ -1,0 +1,22 @@
+package ch7;
+
+public class ch701 {
+	
+	static {
+		System.out.println("靜態區塊A   在最上面");
+	}
+	public ch701() {
+		System.out.println("執行建構子");
+	}
+	static {
+		System.out.println("靜態區塊B 放在建構子後");
+	}
+	public static void main(String[] args) {
+		ch701 abc = new ch701();
+		System.out.println("執行主程式");
+	}
+	static {
+		System.out.println("靜態區塊C  放在主程式後");
+	}
+
+}
