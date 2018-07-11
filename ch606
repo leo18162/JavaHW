@@ -3,7 +3,7 @@ package ch6;
 public class ch606 {
 	public static void  main(String arg[]) {
 		ch606 l = new ch606();
-		String s = "12345";
+		String s = "123";
 		l.toUnicodeString(s);
 		System.out.println(l.toUnicodeString(s));
 		
@@ -11,14 +11,13 @@ public class ch606 {
 //----------上面為執行方法的測試-------------
 	public String toUnicodeString(String s)
 	{
-		StringBuilder b = new StringBuilder();
-		char c='a';
-		String ans="";
+		char c;
+		String ans="", test="";
 		for(int i =0;i<s.length();i++)
 		{
 			 c= s.charAt(i);
-			ans=""+b.append("\\u").append(String.format("%04X", (int) c));
+			 test +=  "\\u"+String.format("%04X", (int) c);
 		}
-		return ans;
+		return test;
 	}
 }
