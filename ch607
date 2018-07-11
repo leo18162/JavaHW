@@ -1,5 +1,5 @@
 // MyRectangleMain.java  檔
-package ch607;
+package ch6.ch07;
 
 public class MyRectangleMain {
 
@@ -16,7 +16,7 @@ public class MyRectangleMain {
 }
 
 //MyRectangle   檔
-package ch607;
+package ch6.ch07;
 
 public class MyRectangle {
 	 public MyRectangle() {} 
