@@ -1,0 +1,63 @@
+// MyRectangleMain.java  檔
+package ch6.ch07;
+
+public class MyRectangle {
+	 public MyRectangle() {} 
+	 public MyRectangle(double width,double depth) {
+		 this.width=width;
+		 this.depth=depth;
+	 }
+	 
+	double width,depth;
+	 
+	public void setWidth(double width) {
+		this.width = width;
+	}
+	
+	public void setDepth(double depth) {
+		this.depth = depth;
+	}
+	
+	double getArea() {
+		double ans=width*depth;
+		return ans;
+	}
+	
+  //-------以上與ch607相同-----下面為ch608新增
+  
+	public boolean equals(Object obj) {
+		MyRectangle oth = (MyRectangle) obj;
+		if (this.width ==oth.width)
+			return true;
+		else
+			return false;
+	}
+	
+	public int hashCode() {
+		return 10;
+	}
+}
+
+
+
+
+//MyRectangle.java   檔
+
+package ch6.ch07;
+
+public class MyRectangleMain {
+
+	public static void main(String[] args) {
+		MyRectangle R1 = new MyRectangle();
+		R1.width=10;
+		R1.depth=20;
+		System.out.println(R1.getArea());
+		
+		MyRectangle R2 = new MyRectangle(10,20);
+		System.out.println(R2.getArea());
+    
+    
+		System.out.println(R1.equals(R2));
+	}
+}
+
