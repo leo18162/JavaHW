@@ -25,20 +25,16 @@ public class MyRectangle {
 	
   //-------以上與ch607相同-----下面為ch608新增
   
-	public boolean equals(Object obj) {
-		MyRectangle oth = (MyRectangle) obj;
-		if (this.width ==oth.width)
+	public boolean equals(MyRectangle obj) {        
+		if (this.width ==obj.width&this.depth ==obj.depth)
 			return true;
 		else
 			return false;
 	}
-	
 	public int hashCode() {
 		return 10;
 	}
 }
-
-
 
 
 //MyRectangle.java   檔
