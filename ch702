@@ -1,0 +1,26 @@
+package ch7;
+
+import java.util.Calendar;
+
+class StaticCodeBlock{
+	static String season;
+	static {
+		Calendar d = Calendar.getInstance();
+		int month= d.get(Calendar.MONTH);
+		if(month>=2 & month<5)
+				season="春天";
+		else if(month>=5 & month<8)
+			season="夏天";
+		else if(month>=8 & month<11)
+			season="秋天";
+		else
+			season="冬天";
+}
+}
+public class ch702 {
+	public static void main(String[] args) {
+
+		System.out.println(StaticCodeBlock.season);
+	}
+
+}
