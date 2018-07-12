@@ -1,0 +1,20 @@
+package ch7;
+abstract  class Human {
+	int weight = 50;
+	abstract void smile();
+}
+class OrdinaryPeople extends Human{
+	void smile(){
+		System.out.println("2654");
+	}
+}
+class HappyMary extends OrdinaryPeople{
+
+}
+
+public  class ch703 {
+	public static void main(String[] args) {
+		HappyMary hm = new HappyMary();
+		hm.smile();
+	}
+}
