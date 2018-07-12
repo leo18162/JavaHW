@@ -18,14 +18,20 @@ public class ch605 {
 		}
 
 		String arr[] = ans.split(" ") ; //用空格分隔  來取元素
-		int sum=0,i;
+		int sum=0,i,max=Integer.MIN_VALUE,min=Integer.MAX_VALUE;
 		for( i =0;i<arr.length;i++)
+		{
 			sum += Integer.parseInt(arr[i]);
+			
+			if (max<Integer.parseInt(arr[i]))
+				max=Integer.parseInt(arr[i]);
+			if(min>Integer.parseInt(arr[i]))
+				min=Integer.parseInt(arr[i]);
+		}
 
-		Arrays.sort(arr);
 		double avg = sum/(arr.length+0.0);
 		System.out.println(Arrays.toString(arr));
 		System.out.print("總和 :"+sum+"  平均 :"+avg);
-		System.out.print("最大值 :"+arr[i-1]+"  最小值 :"+arr[0]);
+		System.out.print("最大值 :"+max+"  最小值 :"+min);
 	}
 }
