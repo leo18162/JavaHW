@@ -5,33 +5,38 @@ import java.util.Scanner;
 
 public class ch605 {
 	public static void main(String[] args) {
+
 		Scanner sc = new Scanner(System.in);
-		String ans ="",s="";
+		String ans = "", s = "";
 		System.out.println("請輸入多個數字的字串,或是quit離開");
-		while(true)
+		while (true)
 		{
-		 s = sc.next();
-		if (s.equals("quit"))
-			break;
-		else
-			ans+=s+" ";
+			s = sc.next();
+			if (s.equals("quit"))
+				break;
+			else
+				ans += s + " ";
 		}
 
-		String arr[] = ans.split(" ") ; //用空格分隔  來取元素
-		int sum=0,i,max=Integer.MIN_VALUE,min=Integer.MAX_VALUE;
-		for( i =0;i<arr.length;i++)
+		String arr[] = ans.split(" "); // 用空格分隔 來取元素
+		int sum = 0, i, max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
+		try {
+		for (i = 0; i < arr.length; i++)
 		{
 			sum += Integer.parseInt(arr[i]);
-			
-			if (max<Integer.parseInt(arr[i]))
-				max=Integer.parseInt(arr[i]);
-			if(min>Integer.parseInt(arr[i]))
-				min=Integer.parseInt(arr[i]);
+			if (max < Integer.parseInt(arr[i]))
+				max = Integer.parseInt(arr[i]);
+			if (min > Integer.parseInt(arr[i]))
+				min = Integer.parseInt(arr[i]);
+		
 		}
-
-		double avg = sum/(arr.length+0.0);
+		double avg = sum / (arr.length + 0.0);
 		System.out.println(Arrays.toString(arr));
-		System.out.print("總和 :"+sum+"  平均 :"+avg);
-		System.out.print("最大值 :"+max+"  最小值 :"+min);
+		System.out.print("總和 :" + sum + "  平均 :" + avg);
+		System.out.print("最大值 :" + max + "  最小值 :" + min);
+		}
+		catch(NumberFormatException e) {
+			System.out.println("-----輸入錯誤!!!");
+		}
 	}
 }
